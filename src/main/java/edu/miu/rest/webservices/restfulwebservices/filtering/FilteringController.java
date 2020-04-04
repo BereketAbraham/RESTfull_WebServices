@@ -26,6 +26,7 @@ public class FilteringController {
 	}
 	@GetMapping("/filtering-list")
 	public MappingJacksonValue getSomeBeanList(){
+		//Dynamic filtering
 		List<SomeBean> list = new ArrayList<SomeBean>(Arrays.asList(new SomeBean("Value1", "Value2", "Value3"), new SomeBean("Value12", "Value22", "Value32")));
 		SimpleBeanPropertyFilter filter = SimpleBeanPropertyFilter.filterOutAllExcept("filter1", "filter3");
 		FilterProvider filterProvider = new SimpleFilterProvider().addFilter("SomeBeanFilter", filter);
