@@ -1,2 +1,2 @@
-# bereketmichael741-gmail.com
+# A Java Project on Restfull Webservices
 RESTfull_Web_Services
